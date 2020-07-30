@@ -103,7 +103,28 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 - **HOME**
 
-![Home](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s1.JPG)
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/1.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/2.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/3.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/4.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/5.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/6.jpg)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/7.png)
+
+
+![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/8.png)
 
 - **Listings** 
 
@@ -114,17 +135,6 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 ![Registration](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s4reg.JPG)
 
-- **Admin Panel - 1**
-
-![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s5adm.JPG)
-
-- **Admin Panel - 2**
-
-![Admin](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s6r.JPG)
-
-- **About**
-
-![About ](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s2about.JPG)
 
 
 ## Acknowledgments
