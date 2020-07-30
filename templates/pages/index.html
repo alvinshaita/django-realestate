@@ -1,0 +1,237 @@
+{% extends 'base.html' %} 
+
+{% load humanize %}
+{% load static %}
+
+{% block title %} | Welcome {% endblock %}
+
+{% block content %}
+<!-- Showcase -->
+<section id="showcase">
+		<div class="container text-center">
+								<h1 class="display-4 mb-4">
+						Property Searching Just Got So Easy
+					</h1>
+					<p class="lead">Find the perfect property</p>
+			<div class="home-search p-5">
+				<div class="overlay search_container">
+
+					<div class="search">
+						<form action="{% url 'search' %}">
+							<div class="form-content">
+								<div class="form-search">
+								<!-- Form Row 1 -->
+									<div class="form-row">
+										<div class="col-md-4search mb-3">
+											<label class="sr-only">Keywords</label>
+											<input type="text" name="keywords" class="form-control" placeholder="Keyword (Pool, Garage, etc)">
+										</div>
+
+										<div class="col-md-4search mb-3">
+											<label class="sr-only">City</label>
+											<input type="text" name="city" class="form-control" placeholder="City">
+										</div>
+
+										
+									</div>
+									<!-- Form Row 2 -->
+									<div class="form-row">
+										<div class="col-md-6search mb-3">
+											<label class="sr-only">State</label>
+											<input type="text" name="state" class="form-control" placeholder="State">
+											<!-- <select name="state" class="form-control">
+												<option selected="true" disabled="disabled">State (All)</option>
+												{% for key,value in state_choices.items %}
+													<option value="{{ key }}">{{ value }}</option>
+												{% endfor %}
+											</select>
+ -->										</div>
+										<div class="col-md-6search mb-3">
+											<label class="sr-only">Bedrooms</label>
+											<select name="bedrooms" class="form-control">
+												<option selected="true" disabled="disabled">Bedrooms (All)</option>
+												{% for key,value in bedroom_choices.items %}
+													<option value="{{ key }}">{{ value }}</option>
+												{% endfor %}
+											</select>
+										</div>
+										<div class="col-md-6search mb-3">
+											<select name="price" class="form-control" id="type">
+												<option selected="true" disabled="disabled">Max Price (Any)</option>
+												{% for key,value in price_choices.items %}
+													<option value="{{ key }}">{{ value }}</option>
+												{% endfor %}
+											</select>
+										</div>
+								<!-- 		<div class="form-search-button">
+									<button class="btn btn-secondary btn-block" type="submit">Search</button>
+								</div> -->
+									</div>
+								</div>
+								<div class="form-search-button">
+									<button class="btn btn-secondary btn-block mt-4" type="submit">Search</button>
+									<!-- <i id="search_button" class="fa fa-search" aria-hidden="true"></i> -->
+
+									<!-- <button class="btn btn-secondary btn-block mt-4" type="submit">
+									<i id="search_button" class="fa fa-search" aria-hidden="true"></i>
+								</button> -->
+									
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Alerts -->
+	{% include 'partials/_alerts.html' %}
+
+		<section id="services" class="py-5 bg-secondary text-white">
+		<div class="container">
+			<h3 class="text-center mb-31">
+				<a>What we offer</a>
+				<hr class="main_underline">
+			</h3>
+			<div class="row text-center">
+				<div class="col-md-4 products">
+					<!-- <i class="fas fa-comment fa-4x mr-4"></i> -->
+
+					<!-- <img src="../../realestate/static/img/house/rent_house.png"> -->
+					<img class="re_products image" src="{% static 'img/house/buy_house.png' %}">
+					<!-- <hr> -->
+					<h3 class="index_bottom_title">Buy a home</h3>
+					<p class="index_bottom_text">With over 1 million+ homes for sale available on the website, Trulia can match you with a house you will want to call home.</p>
+				</div>
+				<div class="col-md-4 products">
+					<!-- <i class="fas fa-home fa-4x mr-4"></i> -->
+					<img class="re_products image" src="{% static 'img/house/rent_house.png' %}">
+					<!-- <hr> -->
+					<h3 class="index_bottom_title">Rent a home</h3>
+					<p class="index_bottom_text">With 35+ filters and custom keyword search, Trulia can help you easily find a home or apartment for rent that you'll love.</p>
+				</div>
+				<div class="col-md-4 products">
+					<!-- <i class="fas fa-suitcase fa-4x mr-4"></i> -->
+					<img class="re_products image" src="{% static 'img/house/neighbours.png' %}">
+					<!-- <hr> -->
+					<h3 class="index_bottom_title">See neighborhoods</h3>
+					<p class="index_bottom_text">With more neighborhood insights than any other real estate website, we've captured the color and diversity of communities.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Listings -->
+	<section id="listings" class="py-5 bg-secondary text-white">
+		<div class="container">
+			<!-- <h3 class="text-center mb-31">Latest Listings</h3> -->
+			<h3 class="text-center mb-31">
+				<a>Latest Listings</a>
+				<hr class="main_underline">
+			</h3>
+			<div class="enclose_row">
+				<div class="row">
+					{% if listings %}
+						{% for listing in listings %}
+							<!-- Listing 1 -->
+							<a href="{% url 'listing' listing.id %}" style="">
+
+							<div class="col-md-6 col-lg-4 mb-4 index">
+								<div class="card listing-preview">
+									<!-- <a href="{% url 'listing' listing.id %}">aaaaa</a> -->
+									<!-- <a href="{% url 'listing' listing.id %}" class="btn btn-primary btn-block">More Info</a> -->
+										<img class="card-img-top listing" src="{{ listing.photo_main.url }}" alt="">
+									<!-- </a> -->
+									<div class="card-img-overlay">
+										<!-- <h2> -->
+											<span class="badge badge-secondary text-white">${{ listing.price | intcomma }}</span>
+										<!-- </h2> -->
+									</div>
+									<div class="card-body">
+										<div class="listing-heading text-center_1">
+											<a class="text-primary property-title">{{ listing.title }}</a>
+										</div>
+										<!-- <div class="listing-heading text-center_1"> -->
+										<div class="listing_location text-center_1">
+											<a class="property-location">
+												<i class="fa fa-map-marker" aria-hidden="true"></i>
+												<!-- <i class="fas fa-map-marker text-secondary"></i>  -->
+												{{ listing.city }} {{ listing.state }}, {{ listing.zipcode }}
+											</a>
+										</div>
+										<!-- <hr class="hr"> -->
+										<div class="rows1">
+											<div class="row py-2 text-secondary left">
+												<div class="col-6 icon">
+													<!-- <i class="fas fa-th-large"></i> -->
+													<div class="card_icon">
+														<i class="fa fa-th-large"></i>
+													</div>
+													Sqft: {{ listing.sqft }}
+												</div>
+												<div class="col-6 icon">
+													<div class="card_icon">
+														<i class="fa fa-car"></i>
+													</div>
+													<!-- <i class="fa fa-car"></i> -->
+													<!-- <i class="fas fa-car"></i>  -->
+													Garage: {{ listing.garage }}
+												</div>
+											</div>
+											<div class="row py-2 text-secondary right">
+												<div class="col-6 icon">
+													<!-- <i class="fas fa-bed"></i> -->
+													<div class="card_icon">
+														<i class="fa fa-bed"></i>
+													</div>
+													<!-- <i class="fa fa-bed"></i> -->
+													 Bedrooms: {{ listing.bedrooms }}</div>
+												<div class="col-6 icon">
+													<!-- <i class="fas fa-bath"> -->
+													<div class="card_icon">
+														<i class="fa fa-bath"></i>
+													</div>
+													<!-- <i class="fa fa-bath">	 -->
+													Bathrooms: {{ listing.bathrooms }}</div>
+											</div>
+										</div>
+										<hr class="hr listing">
+										<div class="realtor_date">
+											<div class="row py-2 text-secondary realtor_d">
+												<div class="col-6">
+		            								<img class="card-realtor" src="{{ listing.realtor.photo.url }}" alt=""></i> 
+		            								<a class="listing-realtor">{{ listing.realtor }}</a>
+		            							</div>
+											</div>
+											<div class="row text-secondary pb-2 r_date">
+												<div class="col-6 date">
+													<i class="fas fa-clock"></i>
+													<a class="listing-time-ago">{{ listing.list_date | timesince }} ago</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</a>
+						{% endfor %}
+					{% else %}
+						<div class="col-md-12">
+							<p>No Listings Available</p>
+						</div>
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<!-- <section id="work" class="bg-dark text-white text-center">
+		<h2 class="display-4">We Work For You</h2>
+		<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+		<hr>
+		<a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+	</section>
+ -->
+
+{% endblock %}

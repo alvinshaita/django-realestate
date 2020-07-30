@@ -1,0 +1,175 @@
+{% extends 'base.html' %} 
+
+{% load static %}
+
+{% block title %} | About Us {% endblock %}
+
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+	<div class="container">
+	  <div class="row text-center">
+		<div class="col-md-12">
+		  <h1 class="display-4 mb-4">About Us</h1>
+		  <!-- <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt, pariatur!</p> -->
+		</div>
+	  </div>
+	</div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+	<div class="container">
+	  <nav aria-label="breadcrumb">
+		<ol class="breadcrumb">
+		  <li class="breadcrumb-item">
+			<a href="{% url 'index' %}">
+			  <i class="fas fa-home"></i> Home</a>
+		  </li>
+		  <li class="breadcrumb-item active"> About</li>
+		</ol>
+	  </nav>
+	</div>
+  </section>
+
+  <section id="about" class="py-4">
+	<div class="container">
+	  <div class="row">
+		<div class="about_container">
+		  <!-- <h2>RealEstate is a real estate company</h2> -->
+		  <!-- <h2 class="about_what">About RealEstate</h2> -->
+		  <h2 class="text-center">About RealEstate</h2>
+		  <hr class="main_underline">
+		  
+		  <!-- <hr class="about_underline"> -->
+
+		 	<div class="why_main_title 1">
+				<a class="about_heading 2">Why buy a house with RealEstate?</a>
+			</div>
+			<hr class="about_underline">
+			<br>
+		  <!-- <a class="about_heading 1">Why buy a house with RealEstate?</a> -->
+		  <div class="about_top">
+		  	<!-- <div class="about_top_image">
+		  		<img src="{% static 'img/about.jpg' %}" alt="">
+		  	</div> -->
+		  	<div class="about_top_text">
+		  		<a class="mt-4">Quality, speed, an extensive scope of services and security – provided by the world’s largest real estate network. With RE you choose the right way no matter if you are looking to buy your first home, a new home for you and your family, a holiday residence or are looking for an investment. More than 1.8 million clients place their trust in us each year. Become one of them and let our RE professionals guide you through the process of buying a new home.</a>
+		  	</div>
+		</div>
+
+		<div class="why_employee">
+			<div class="why">
+				<div class="why_main_title 2">
+					<a class="about_heading 2">Advantages of using RealEstate</a>
+				</div>
+				<hr class="about_underline">
+				<!-- <div> -->
+					<!-- <hr class="about_underline"> -->
+				<!-- </div> -->
+				<br>
+				<div class="why_data 1">
+					<div class="why_title t1">
+						<a>1. Enjoy an extensive selection of properties with the international RE network</a>
+					</div>
+					<div class="why_text 1">
+						<a>With over 6,700 offices in nearly 100 countries all around the world, RE is the number one real estate company. Thanks to this extensive distribution network, the RE offer is huge. Our franchise system, with more than 100,000 licensed agents, is an active network in which all agents collaborate and share their properties. This is a clear advantage for clients as they receive a wide selection of suitable potential properties.</a>
+					</div>
+				</div>
+
+				<div class="why_data 2">
+					<div class="why_title t2">
+						<a>2. Save time with the professional guidance of RE agents</a>
+					</div>
+					<div class="why_text 2">
+						<a>While RE guarantees a comprehensive range of properties, we do not overwhelm our clients with information. Instead, RE agents conduct an essential selection of those properties that meet the client’s needs. Services naturally include complete information provided in good time and on a regular basis, the preparation of contractual documentation for the parties involved, legal services, the notary deposit of money, arrangement of insurance and subsequent post-sales services (arranging removal services, etc.).</a>
+					</div>
+				</div>
+
+				<div class="why_data 3">
+					<div class="why_title 3">
+						<a>3. Benefit from the experience and excellence of RE</a>
+					</div>
+					<div class="why_text 3">
+						<a>In more than 40 years, we at RE have perfected our real estate services and continue to pass on our consolidated pool of knowledge to our agents. All RE agents undergo various training courses on a regular basis and are continuously supported by the network in order to offer the highest quality of real estate services. This is how we ensure that our agents know best how to satisfy client needs – as THE local expert in their respective markets.</a>
+					</div>
+				</div>
+			</div>
+		<!-- 	<div class="col-md-4_employee">
+			  {% if mvp_realtors %}
+				{% for realtor in mvp_realtors %}
+				<div class="card">
+					<img class="card-img-top" src="{{ realtor.photo.url }}" alt="Seller of the month">
+					<div class="card-body">
+					  <h5 class="card-title">Seller Of The Month</h5>
+					  <h6 class="text-secondary">{{ realtor.name }}</h6>
+					  <p class="card-text">{{ realtor.description }}
+					  </p>
+					</div>
+				  </div>
+				{% endfor %}
+			  {% endif %}
+			</div> -->
+		</div>
+
+	  </div>
+	</div>
+  </section>
+
+  <!-- Work -->
+<section  class="bg-dark text-white text-center py-5">
+	<div class="testimony">
+		<!-- <div class="testi_heading">
+			<a class="testimonials">Testimonials</a>
+		</div> -->
+		<h2 class="text-center">Testimonials</h2>
+		<!-- <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4> -->
+		<div class="testimonial_data">
+			<a class="testimonial_text">"We are very grateful to Rebecca and her team for making the process of selling our home run smoothly where the unpredictability and pressure of a stressed market was handled so professionally."</a>
+		</div>
+		<!-- <p class="testimonial_client">- Duncan Thomas</p> -->
+		<div class="testi_client">
+			<a class="testimonial_client">- Duncan Thomas</a>
+		</div>
+		<!-- <hr> -->
+		<!-- <a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a> -->
+	</div>
+</section>
+<!--   <section id="work" class="bg-dark text-white text-center">
+	<h2 class="display-4">We Work For You</h2>
+	<h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem velit aperiam, unde aliquid at similique!</h4>
+	<a href="{% url 'listings' %}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+ -->
+  <!-- Team -->
+  <section id="team" class="py-5">
+	<div class="container">
+	  <h2 class="text-center">Our Team</h2>
+	  <hr class="main_underline">
+	  <div class="row text-center">
+		{% if realtors %}
+		  {% for realtor in realtors %}
+		  	<div class="our-team-bottom">
+			  	<div class="col-md-4 our-team">
+			  		<i class="fas fa-award text-success mb-3"></i> Realtor</p>
+					<img src="{{ realtor.photo.url }}" alt="" class="rounded-circle mb-3 our-team">
+					<h4>{{ realtor.name }}</h4>
+					<!-- <hr> -->
+					<!-- <h4>{{ realtor.name }}</h4> -->
+					<!-- <p class="text-success"> -->
+					<!-- <i class="fas fa-award text-success mb-3"></i> Realtor</p> -->
+					<!-- <hr> -->
+					<p><i class="fas fa-phone"></i> {{ realtor.phone }}</p>
+					<p><i class="fas fa-envelope-open"></i> {{ realtor.email }}</p>
+				</div>
+			</div>
+		  {% endfor %}
+		{% else %}
+		  <div class="col-md-12">
+			<p>No Realtors Available</p>
+		  </div>
+		{% endif %}       
+	  </div>
+	</div>
+  </section>
+
+{% endblock %}
