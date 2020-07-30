@@ -10,16 +10,16 @@ A simple, reponsive  website. Built with:
 - Vanilla JS - ES6
 - JQuery
 
-If you are new to Django, checkout the [Django 2.x Cheat Sheet](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/django_cheat_sheet.md)
+If you are new to Django, checkout the [Django 2.x Cheat Sheet](https://github.com/alvinshaita/realestate/blob/master/django_cheat_sheet.md)
 
-If you want to deploy this Web App In Ubuntu 18.04 Server, Please Follow this [Guide](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/Django_Deployment_to_Ubuntu_18.04.md) 
+If you want to deploy this Web App In Ubuntu 18.04 Server, Please Follow this [Guide](https://github.com/alvinshaita/realestate/blob/master/Django_Deployment_to_Ubuntu_18.04.md) 
 
 ## How to run this project (Ubuntu 18.04)
 
 1. **Clone the project**
 
 ```sh
-git clone https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App.git
+git clone https://github.com/alvinshaita/realestate.git
 ```
 
 2.  **Make sure you are in *Real-Estate-Django-Web-App* folder**
@@ -101,8 +101,6 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 ### Screenshots
 
-- **HOME**
-
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/1.png)
 
 
@@ -126,22 +124,4 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/8.png)
 
-- **Listings** 
 
-
-![Listings](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s3list.JPG)
-
-- **Registration** 
-
-![Registration](https://github.com/TheCaffeineDev/Real-Estate-Django-Web-App/blob/master/screenshots/s4reg.JPG)
-
-
-
-## Acknowledgments
-
-Many thanks to [@bradtraversy](https://github.com/bradtraversy) for his awesome course.
-
-##### References
-
-1. https://www.traversymedia.com/
-2. https://www.djangoproject.com/
