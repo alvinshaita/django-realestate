@@ -4,10 +4,10 @@ A real estate listings website built with `python` `django` `bootstrap`.
 
 A simple, reponsive  website. Built with:
 
-- Python 🐍
-- Django 🎸
-- Bootstrap 4 🌈
-- Vanilla JS - ES6
+- Django
+- Python
+- Bootstrap
+- Vanilla JS
 - JQuery
 
 If you are new to Django, checkout the [Django 2.x Cheat Sheet](https://github.com/alvinshaita/realestate/blob/master/django_cheat_sheet.md)
@@ -22,7 +22,7 @@ If you want to deploy this Web App In Ubuntu 18.04 Server, Please Follow this [G
 git clone https://github.com/alvinshaita/realestate.git
 ```
 
-2.  **Make sure you are in *Real-Estate-Django-Web-App* folder**
+2.  **Make sure you are in *realestate* folder**
 
    1. Install all dependencies
 
@@ -101,6 +101,7 @@ Note: Please change those gmail credentials from real_estate folder you will get
 
 ### Screenshots
 
+Home
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/1.png)
 
 
@@ -110,18 +111,23 @@ Note: Please change those gmail credentials from real_estate folder you will get
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/3.png)
 
 
+About
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/4.png)
 
 
+Listings
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/5.png)
 
 
+Listing
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/6.jpg)
 
 
+Inquiry
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/7.png)
 
 
+Home overview
 ![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/8.png)
 
 
