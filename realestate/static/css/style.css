@@ -1053,8 +1053,13 @@ h1{
 	}
 
 	.search{
-		padding: 20px 20px;
+		padding: 6% 5%;
 	}
+
+	.display-4.mb-4{
+		/*font-size: 32px !important;*/
+	}
+
 	.form-content{
 		display: block;
 	}
@@ -1082,5 +1087,70 @@ h1{
 	.footer_top_column.col_3{
 		margin-top: 0px;
 	}
-	
+
+	.overlay.search_container{
+		padding: 0px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*about*/
+	.about_container{
+		padding: 5% 5%;
+	}
+
+	.testimony{
+		padding: 5% 5%;	
+	}
+
+	.row.text-center{
+		display: block;
+	}
+
+	.our-team-bottom{
+		width: 100%;
+	}
+
+	.col-md-6.col-lg-4.mb-4.index:not(:last-child){
+		margin-bottom: 5%;
+	}
+
+
+
+
+
+
+
+	.badge.badge-secondary.text-white{
+		background-color: rgb(36,39,41) !important;
+	}
+
+	.logo{
+		margin-left: 3.5%;
+	}
+
+
+	.col-md-69{
+		width: 100%;
+		padding: 0% 5%;
+	}
+
+
+	#top-bar{
+		display: none;
+	}
+
+
+
+
 }
