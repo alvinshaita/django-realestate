@@ -1008,3 +1008,79 @@ h1{
 	/*margin-top: 100px;*/
 	margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	.col-md-4.products{
+		/*background-color: red;*/
+		flex: auto;
+		margin-bottom: 10px;
+	}
+/*
+	.form-row{
+		display: block;
+	}*/
+
+
+	.col-md-4search.mb-3{
+		width: 100%;
+	}
+
+	.form-search{
+		width: 100%;
+	}
+
+	.form-search-button{
+		width: 100%;
+		padding: 0px; 
+		/*font-size: 10px !important;*/
+	}
+
+	.search{
+		padding: 20px 20px;
+	}
+	.form-content{
+		display: block;
+	}
+
+	.home-search.p-5{
+		margin: 10% 10% !important;
+	}
+
+	.btn.btn-secondary.btn-block.mt-4{
+		font-size: 14px;
+	}
+
+
+
+
+	.footer_top{
+		display: block;
+		padding: 10% 5%;
+	}
+
+	.footer_top_column{
+		margin: 10% 0%;
+	}
+
+	.footer_top_column.col_3{
+		margin-top: 0px;
+	}
+	
+}
