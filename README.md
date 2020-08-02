@@ -2,8 +2,6 @@
 
 A real estate listings website built with `python` `django` `bootstrap`.
 
-A simple, reponsive  website. Built with:
-
 - Django
 - Python
 - Bootstrap
@@ -99,35 +97,7 @@ For Database I have used Postgres Database Name: real_estate
 
 Note: Please change those gmail credentials from real_estate folder you will get settings.py inside that file you will see username and password mentioned as place your Username and Password. Also do that same thing from Contacts folder views.py you will see YourEmail mentioned on line number 33.
 
-### Screenshots
+### Screenshot
 
-Home
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/1.png)
-
-
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/2.png)
-
-
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/3.png)
-
-
-About
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/4.png)
-
-
-Listings
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/5.png)
-
-
-Listing
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/6.jpg)
-
-
-Inquiry
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/7.png)
-
-
-Home overview
-![Home](https://github.com/alvinshaita/realestate/blob/master/screenshots/8.png)
-
+![Home](https://github.com/alvinshaita/django-realestate/blob/master/screenshots/Screenshot_2020-08-02%20Real%20Estate%20Welcome(1).png)
 
