@@ -1008,3 +1008,149 @@ h1{
 	/*margin-top: 100px;*/
 	margin-bottom: 30px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 800px) {
+	.col-md-4.products{
+		/*background-color: red;*/
+		flex: auto;
+		margin-bottom: 10px;
+	}
+/*
+	.form-row{
+		display: block;
+	}*/
+
+
+	.col-md-4search.mb-3{
+		width: 100%;
+	}
+
+	.form-search{
+		width: 100%;
+	}
+
+	.form-search-button{
+		width: 100%;
+		padding: 0px; 
+		/*font-size: 10px !important;*/
+	}
+
+	.search{
+		padding: 6% 5%;
+	}
+
+	.display-4.mb-4{
+		/*font-size: 32px !important;*/
+	}
+
+	.form-content{
+		display: block;
+	}
+
+	.home-search.p-5{
+		margin: 10% 10% !important;
+	}
+
+	.btn.btn-secondary.btn-block.mt-4{
+		font-size: 14px;
+	}
+
+
+
+
+	.footer_top{
+		display: block;
+		padding: 10% 5%;
+	}
+
+	.footer_top_column{
+		margin: 10% 0%;
+	}
+
+	.footer_top_column.col_3{
+		margin-top: 0px;
+	}
+
+	.overlay.search_container{
+		padding: 0px;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	/*about*/
+	.about_container{
+		padding: 5% 5%;
+	}
+
+	.testimony{
+		padding: 5% 5%;	
+	}
+
+	.row.text-center{
+		display: block;
+	}
+
+	.our-team-bottom{
+		width: 100%;
+	}
+
+	.col-md-6.col-lg-4.mb-4.index:not(:last-child){
+		margin-bottom: 5%;
+	}
+
+
+
+
+
+
+
+	.badge.badge-secondary.text-white{
+		background-color: rgb(36,39,41) !important;
+	}
+
+	.logo{
+		margin-left: 3.5%;
+	}
+
+
+	.col-md-69{
+		width: 100%;
+		padding: 0% 5%;
+	}
+
+
+	#top-bar{
+		display: none;
+	}
+
+
+
+
+}
