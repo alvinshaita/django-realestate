@@ -24,6 +24,15 @@
             <a class="nav-link" href="{% url 'index' %}">Home</a>
           </li>
           <li
+            {% if 'listings' in request.path %}
+              class="nav-item active mr-3"
+            {% else %}
+              class="nav-item mr-3"
+            {% endif %}
+          >
+            <a class="nav-link" href="{% url 'listings' %}">Listings</a>
+          </li>
+          <li
             {% if 'about' in request.path %}
               class="nav-item active mr-3"
             {% else %}
@@ -31,15 +40,6 @@
             {% endif %}
           >
             <a class="nav-link" href="{% url 'about' %}">About</a>
-          </li>
-          <li
-            {% if 'listings' in request.path %}
-              class="nav-item active mr-3"
-            {% else %}
-              class="nav-item mr-3"
-            {% endif %}
-          >
-            <a class="nav-link" href="{% url 'listings' %}">Featured Listings</a>
           </li>
         </ul>
 

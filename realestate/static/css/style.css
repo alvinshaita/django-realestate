@@ -18,12 +18,30 @@ html{
 	/*color: rgba(255, 255, 255, 0.95);*/
 
 	outline: none;
+	height: 100%;
 	
 }
 
+#login {
+	/*background: blue !important;*/
+	height: 100%;
+	display: flex;
+	align-items: center;
+	
+	/*justify-content: center;*/
+	/*flex: 1;*/
+	/*padding: 10%;*/
+}
 body{
 	/*background-color: #fff;*/
 	background-color: #f7f7f7;
+	height: 100%;
+	/*background-color: red;*/
+	
+
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;*/
 }
 
 .navbar.navbar-expand-lg.navbar-dark.bg-primary.sticky-top{
@@ -124,10 +142,8 @@ img {
 	/*background: linear-gradient(rgba(0, 0, 0, 0.5), #0c0d0e ), url(../img/two/two6.jpg) no-repeat center;*/
 	/*background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url(../img/two/two6.jpg) no-repeat center;*/
 
+}
 
-	min-height: 300px;
-	position: relative;
-	overflow: hidden; }
 	#services::before {
 		content: '';
 		position: absolute;
@@ -276,6 +292,9 @@ img {
 	font-size: 15px;
 
 	color: #fff;
+	/*position: fixed;*/
+	/*position: absolute;*/
+	bottom: 0px;
 	/*background-color: green;*/
 	/*background-color: #333f48;*/
 	/*padding-left: 100px;*/
@@ -1153,4 +1172,12 @@ h1{
 
 
 
+}
+
+.card-header {
+	background: #333f48;
+}
+
+.card-button {
+	background: #333f48;
 }
