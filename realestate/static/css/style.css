@@ -43,13 +43,15 @@ img {
 	margin-right: 0.4rem; }
 
 #showcase {
-	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/one/one5.jpg) fixed;
+	background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../img/background/interior.jpg) fixed;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 	position: relative;
 	min-height: 650px;
 	color: #fff;
-	padding-top: 6rem;}
+	padding-top: 6rem;
+	z-index: 1;
+}
 
 	#showcase .home-search {
 		margin-left: 100px;
