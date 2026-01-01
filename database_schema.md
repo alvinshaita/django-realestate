@@ -28,7 +28,6 @@
 
 ### REALTOR
 - id: INT
-
 - name: STR
 - photo: STR
 - description: TEXT
